@@ -1,0 +1,61 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  height: 100vh;
+  font-size: 8rem;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.6);
+  display: grid;
+  place-content: center;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+.logo__image {
+  width: 125px;
+  height: 125px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.5rem;
+}
+
+.red {
+  background-color: #f65314;
+}
+.green {
+  background-color: #7cbb00;
+}
+.blue {
+  background-color: #00a1f1;
+}
+.yellow {
+  background-color: #ffbb00;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 4rem;
+  }
+
+  .container {
+    gap: 1.5rem;
+  }
+
+  .logo__image {
+    width: 62.5px;
+    height: 62.5px;
+  }
+}
